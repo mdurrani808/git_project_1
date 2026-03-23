@@ -32,7 +32,10 @@ Learned that you can create branches using another branch and delete branches as
 - git merge --ff-only upstream/main
 - git rebase main
 - git push --force-with-lease origin feature/awang727 
+Learned how what rebasing a branch does and upstream compared to origin. 
 
 ## Checkpoint 6:
 - git log main..HEAD --oneline
-- 
+- git rebase -i main
+- git push --force origin feature/awang727
+Learned how to rewrite and edit commit history and squash commits to make readability better.
