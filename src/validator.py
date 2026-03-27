@@ -1,4 +1,8 @@
-"""Input validation for calculator."""
+"""Input validation for calculator.
+This mode checks if the given values are number, valide operation, 
+are positive. 
+
+"""
 
 def validate_number(value):
     """Validate that value can be converted to a number."""
