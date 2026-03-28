@@ -1,5 +1,6 @@
-"""Input validation for calculator."""
-
+"""These are the validation functions for the calculator inputs and are used in the main calculator logic before the operations are performed."""
+# temporary comment for CheckPoint 4
+"""Module provides functions to check if input is  valid"""
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:
@@ -10,5 +11,25 @@ def validate_number(value):
 
 def validate_operation(op):
     """Validate that operation is supported."""
-    valid_ops = ['+', '-', '*', '/']
+     # an list of valid operation
+    valid_ops = ['+', '-', '*', '/', '%']
     return op in valid_ops
+
+def validate_non_negative(n):
+    """Validate that a number is non-negative."""
+    try:
+        num = float(n)
+        return num >= 0
+    except (ValueError, TypeError):
+        return False
+
+def validate_range(value, min_val=-1000, max_val=1000):
+    """Validate that number is within acceptable range."""
+    try:
+        num = float(value)
+        return min_val <= num <= max_val
+    except (ValueError, TypeError):
+        return False
+def is_positive(n):
+    """Check if a number is positive."""
+    return n > 0
