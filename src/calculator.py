@@ -1,4 +1,6 @@
 """Basic calculator operations."""
+# Experiment: exploring additional math operations
+import math
 
 def add(a, b):
     """Add two numbers."""
@@ -17,3 +19,9 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+def square_root(a):
+    """Calculate square root of a."""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return math.sqrt(a)
