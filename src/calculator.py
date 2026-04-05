@@ -27,3 +27,8 @@ def square_root(a):
     if a < 0:
         raise ValueError("Cannot calculate square root of negative number")
     return math.sqrt(a)
+    return a / b
+
+ def is_positive(n):
+     """Check if a number is positive."""
+     return n > 0
